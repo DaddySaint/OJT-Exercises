@@ -1,0 +1,6 @@
+- name: Docker network
+  community.docker.docker_network:
+    name: webnet
+    driver: bridge
+    state: present
+

@@ -1,0 +1,5 @@
+- name: Run NGINX Docker Compose
+  community.docker.docker_compose_v2:
+    project_src: "{{ playbook_dir }}/../nginx"
+    state: present
+

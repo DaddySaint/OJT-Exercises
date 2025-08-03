@@ -1,0 +1,13 @@
+---
+- name: Ensure html directory exists
+  file:
+    path: ./html
+    state: directory
+
+- name: Copy custom index.html to html directory
+  copy:
+    src: index.html
+    dest: ./html/index.html
+
+- name: Start NGINX container using docker-compose
+  command: docker-compose up -d

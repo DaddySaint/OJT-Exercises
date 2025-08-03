@@ -1,0 +1,7 @@
+- name: Setup Docker net and deploy
+  hosts: localhost
+  connection: local
+
+  roles:
+    - docker_network
+    - nginx
